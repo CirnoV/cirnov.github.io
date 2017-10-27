@@ -1,0 +1,22 @@
+.content {
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.Container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconImage {
+  margin: 20px 0;
+  height: 40vw;
+  max-height: 80px;
+}
