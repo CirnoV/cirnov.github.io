@@ -2,8 +2,10 @@
   "name": "icicle.moe",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://CirnoV.github.io/icicle.moe",
   "dependencies": {
     "classnames": "^2.2.5",
+    "gh-pages": "^1.0.0",
     "material-ui": "^1.0.0-beta.11",
     "material-ui-icons": "^1.0.0-beta.10",
     "normalize.css": "^7.0.0",
@@ -20,6 +22,8 @@
     "typeface-roboto": "^0.0.43"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
