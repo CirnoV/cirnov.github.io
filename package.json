@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://cirnov.github.io/",
   "dependencies": {
+    "animejs": "^2.2.0",
     "classnames": "^2.2.5",
     "gh-pages": "^1.0.0",
     "material-ui": "^1.0.0-beta.11",

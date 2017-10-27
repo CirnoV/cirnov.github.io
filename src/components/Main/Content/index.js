@@ -1,5 +1,6 @@
 import './styles.css';
-import React from 'react';
+import React, {Component} from 'react';
+import anime from 'animejs';
 import PropTypes from 'prop-types';
 import {withStyles} from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
@@ -14,44 +15,74 @@ const styles = (theme) => ({
   },
 });
 
-function Content(props) {
-  const {classes} = props;
+class Content extends Component {
+  componentDidMount() {
+    anime({
+      targets: '#text',
+      translateY: ['10rem', '0rem'],
+      delay: 500,
+      easing: 'easeOutExpo',
+      duration: 2000,
+      opacity: [0, 1],
+    });
 
-  return (
-    <div className="content">
-      <div className="Container">
-        <Typography
-          type="headline"
-          style={{color: 'inherit', maxWidth: 400}}
-        >
-          icicle.moe에 오신 걸 환영합니다.
-        </Typography>
-      </div>
+    anime({
+      targets: '#icon-github',
+      translateY: ['10rem', '0rem'],
+      delay: 620,
+      easing: 'easeOutExpo',
+      duration: 2200,
+      opacity: [0, 1],
+    });
 
-      <div className="Container" style={{marginTop: 0}}>
-        {[
-          {icon: SteamIcon, uri: 'http://steamcommunity.com/id/cirnov/'},
-          {icon: GithubCircleIcon, uri: 'https://github.com/CirnoV'},
-        ].map((item) => (
-          <Button
-            key={item.uri}
-            target="_blank"
-            href={item.uri}
-            className={classes.button}
+    anime({
+      targets: '#icon-steam',
+      translateY: ['10rem', '0rem'],
+      delay: 600,
+      easing: 'easeOutExpo',
+      duration: 2200,
+      opacity: [0, 1],
+    });
+  }
+
+  render() {
+    return (
+      <div className="content">
+        <div className="Container" id="text">
+          <Typography
+            type="headline"
+            style={{color: 'inherit', maxWidth: 400}}
           >
-            <img
-              key={item.uri}
-              className="iconImage"
-              src={item.icon}
-              width="120"
-              height="120"
-              alt="icon"
-            />
-          </Button>
-        ))}
+            icicle.moe에 오신 걸 환영합니다.
+          </Typography>
+        </div>
+
+        <div className="Container" style={{marginTop: 0}}>
+          {[
+            {id: 'icon-steam', icon: SteamIcon, uri: 'http://steamcommunity.com/id/cirnov/'},
+            {id: 'icon-github', icon: GithubCircleIcon, uri: 'https://github.com/CirnoV'},
+          ].map((item) => (
+            <Button
+              key={item.id}
+              id={item.id}
+              target="_blank"
+              href={item.uri}
+              className={this.props.classes.button}
+            >
+              <img
+                key={item.uri}
+                className="iconImage"
+                src={item.icon}
+                width="120"
+                height="120"
+                alt="icon"
+              />
+            </Button>
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 Content.propTypes = {
