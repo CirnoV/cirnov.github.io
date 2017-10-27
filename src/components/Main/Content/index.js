@@ -20,27 +20,27 @@ class Content extends Component {
     anime({
       targets: '#text',
       translateY: ['10rem', '0rem'],
-      delay: 500,
+      delay: 1700,
       easing: 'easeOutExpo',
-      duration: 2000,
+      duration: 1500,
       opacity: [0, 1],
     });
 
     anime({
       targets: '#icon-github',
       translateY: ['10rem', '0rem'],
-      delay: 620,
+      delay: 1920,
       easing: 'easeOutExpo',
-      duration: 2200,
+      duration: 1700,
       opacity: [0, 1],
     });
 
     anime({
       targets: '#icon-steam',
       translateY: ['10rem', '0rem'],
-      delay: 600,
+      delay: 1900,
       easing: 'easeOutExpo',
-      duration: 2200,
+      duration: 1700,
       opacity: [0, 1],
     });
   }
