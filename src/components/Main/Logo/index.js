@@ -24,6 +24,14 @@ class Logo extends Component {
       opacity: [0, 1],
       easing: 'easeInOutQuart',
     });
+
+    anime({
+      targets: '.logo',
+      translateY: ['5rem', '0rem'],
+      delay: 2000,
+      duration: 1500,
+      easing: 'easeOutExpo',
+    });
   }
 
   render() {
