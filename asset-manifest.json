@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.9b16c0e1.css",
-  "main.css.map": "static/css/main.9b16c0e1.css.map",
-  "main.js": "static/js/main.b9fb1311.js",
-  "main.js.map": "static/js/main.b9fb1311.js.map",
+  "main.css": "static/css/main.ed5a16ec.css",
+  "main.css.map": "static/css/main.ed5a16ec.css.map",
+  "main.js": "static/js/main.126475f0.js",
+  "main.js.map": "static/js/main.126475f0.js.map",
+  "static/media/discord.svg": "static/media/discord.d073343e.svg",
   "static/media/github-circle.svg": "static/media/github-circle.2bc2270d.svg",
   "static/media/roboto-latin-100.woff": "static/media/roboto-latin-100.02fbb4cf.woff",
   "static/media/roboto-latin-100.woff2": "static/media/roboto-latin-100.01dbb814.woff2",
