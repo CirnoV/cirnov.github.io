@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import {withStyles} from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+import DiscordIcon from '../../../images/discord.svg';
 import SteamIcon from '../../../images/steam.svg';
 import GithubCircleIcon from '../../../images/github-circle.svg';
 
@@ -27,9 +28,9 @@ class Content extends Component {
     });
 
     anime({
-      targets: '#icon-github',
+      targets: '#icon-discord',
       translateY: ['10rem', '0rem'],
-      delay: 2120,
+      delay: 2100,
       easing: 'easeOutExpo',
       duration: 1700,
       opacity: [0, 1],
@@ -38,7 +39,16 @@ class Content extends Component {
     anime({
       targets: '#icon-steam',
       translateY: ['10rem', '0rem'],
-      delay: 2100,
+      delay: 2150,
+      easing: 'easeOutExpo',
+      duration: 1700,
+      opacity: [0, 1],
+    });
+
+    anime({
+      targets: '#icon-github',
+      translateY: ['10rem', '0rem'],
+      delay: 2200,
       easing: 'easeOutExpo',
       duration: 1700,
       opacity: [0, 1],
@@ -59,7 +69,8 @@ class Content extends Component {
 
         <div className="Container" style={{marginTop: 0}}>
           {[
-            {id: 'icon-steam', icon: SteamIcon, uri: 'http://steamcommunity.com/id/cirnov/'},
+            {id: 'icon-discord', icon: DiscordIcon, uri: ''},
+            {id: 'icon-steam', icon: SteamIcon, uri: ''},
             {id: 'icon-github', icon: GithubCircleIcon, uri: 'https://github.com/CirnoV'},
           ].map((item) => (
             <Button

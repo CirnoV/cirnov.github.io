@@ -1,8 +1,10 @@
 {
   "name": "cirnov.github.io",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "homepage": "https://cirnov.github.io/",
+  "author": "CirnoV <cirnov59@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "animejs": "^2.2.0",
     "classnames": "^2.2.5",
