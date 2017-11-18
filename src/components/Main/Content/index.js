@@ -69,7 +69,7 @@ class Content extends Component {
 
         <div className="Container" style={{marginTop: 0}}>
           {[
-            {id: 'icon-discord', icon: DiscordIcon, uri: ''},
+            {id: 'icon-discord', icon: DiscordIcon, uri: 'https://discord.gg/SDfvUf2'},
             {id: 'icon-steam', icon: SteamIcon, uri: 'http://steamcommunity.com/id/cirnov/'},
             {id: 'icon-github', icon: GithubCircleIcon, uri: 'https://github.com/CirnoV'},
           ].map((item) => (
