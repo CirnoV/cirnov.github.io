@@ -9,7 +9,7 @@ import grey from 'material-ui/colors/grey';
 import webApp from './reducers';
 import App from './components/App';
 import 'normalize.css';
-import registerServiceWorker from './registerServiceWorker';
+import {unregister} from './registerServiceWorker';
 
 const store = createStore(
   webApp,
@@ -30,4 +30,4 @@ render(
   document.getElementById('root'),
 );
 
-registerServiceWorker();
+unregister();
